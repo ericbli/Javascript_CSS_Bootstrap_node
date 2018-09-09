@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cheat Sheet</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+
+      <style>
+        body {
+            margin: 30px;
+        }
+        .my-container {
+            border: 1px solid green;
+        }
+        .my-row {
+            border: 3px solid red;
+            height: 300px;
+        }
+        .my-col {
+            border: 3px dotted blue;
+        }
+   
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>Welcome h1 JUMBOTRON</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor p</p>
+        <a href="#" class="btn btn-primary"> btn btn-primary </a>
+      </div>
+    </div>
+    <hr>
+    <!-- TYPOGRAPHY -->
+    <div class="container">
+      <h3>文字印刷</h3>
+      <h1 class="page-header"> Hello, page-header! <small>Secondary textpage-header </small></h1>
+      <p class="lead">lead lead lead lead</p>
+      <p><mark>标记mark mark mark mark Lorem ipsum dolor sit amet</mark>, consectetur adipisicing elit, sed do eiusmod
+      tempor <del> 中画线 del del del delincididunt ut labore 中画线</del>et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation <u>下横线 u u u u u u u ullamco laboris nisi</u> ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <hr>
+<h3>文字对齐</h3>
+      <!-- ALIGNMENT & TRANSFORMATION-->
+      <p class="text-left text-lowercase">Left aligned text.左对齐 小写</p>
+      <p class="text-center text-uppercase">Center aligned text.中间对齐 大写</p>
+      <p class="text-right text-capitalize">Right aligned text.右对齐，头大写</p>
+      <p class="text-justify">Justified text.文本对齐属性text-justifyJustified text左右对齐.文本对齐属性text-justify.文本对齐属性text-justify.文本对齐属性text-justify.文本对齐属性text-justify.文本对齐属性text-justify</p>
+      <p class="text-nowrap">No wrap text.文本不进行换行</p>
+
+      <!-- QUICK FLOATS -->
+      <div class="pull-right">Div floated to right右漂</div>
+      <div class="pull-left">Div floated to left左漂</div>
+
+      <!-- CLEAR FLOAT -->
+      <div class="clearfix"></div>
+
+      <hr>
+<h3>引用</h3>
+      <!-- BLOCKQUOTE -->
+      <blockquote class="blockquote-reverse">
+        <p>引用Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+         <footer>Quote by <cite title="John Doe">John Doe</cite></footer>
+      </blockquote>
+
+      <hr>
+      <h3>排序</h3>
+      <!-- LISTS -->
+      <ul class="list-unstyled">
+        <li>无式样排列Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+
+      <ul class="list-inline">
+        <li>线状排列Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+      </ul>
+
+      <!-- CODE -->
+      <h3>特殊编码</h3>
+      <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+      <br>
+      Change directory with<kbd>cd</kbd>
+      <br>
+      To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+      <hr>
+<h3>相关颜色</h3>
+      <!-- CONTEXTUAL COLORS -->
+      <h4>文字相关颜色</h4>
+      <p class="text-primary">Hello World主色</p>
+      <p class="text-success">Hello World成功</p>
+      <p class="text-info">Hello World信息</p>
+      <p class="text-warning">Hello World警告</p>
+      <p class="text-danger">Hello World危险</p>
+      <p class="text-muted">Hello World安静</p>
+
+      <!-- CONTEXTUAL BACKGROUND COLORS -->
+      <h4>背景相关颜色</h4>
+      <p class="bg-primary">Hello World主色</p>
+      <p class="bg-success">Hello World成功</p>
+      <p class="bg-info">Hello World信息</p>
+      <p class="bg-warning">Hello World警告</p>
+      <p class="bg-danger">Hello World危险</p>
+      <p class="bg-muted">Hello World安静</p>
+
+
+    <hr>
+
+    <!-- BUTTONS -->
+    <h3>按键</h3>
+    <div class="container">
+      <button class="btn btn-default">Button</button>缺损键
+      <a href="#" class="btn btn-default" role="button">Link</a> 缺损键
+      <input type="submit" class="btn btn-default" value="Submit">缺损键
+      <br>
+      <!-- CONTEXTUAL BUTTONS -->
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warnig</button>
+      <button class="btn btn-danger">Delete</button>
+      <button class="btn btn-link">Link</button>
+      <br>
+      <!-- BUTTON SIZES -->
+      <button class="btn btn-default btn-lg">Default</button>大
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-primary btn-sm">Default</button>小
+      <button class="btn btn-default btn-xs" disabled="disabled">Default</button>超小
+    </div>
+
+    <hr>
+   <h4>container 内外的线hr</h4>
+  </div>
+  <hr>
+    <!-- FORMS -->
+   
+    <div class="container">
+      <hr>
+      <h3>表单</h3>
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Add Name">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Add Email">
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" placeholder="Add Message"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Upload File文件上传</label>
+          <input type="file">
+          <p class="help-block">Only png and jpg allowed</p>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+
+        <hr>
+        <h3>线状表单</h3>
+        <!-- INLINE FORM -->
+        <form class="form-inline">
+         <div class="form-group">
+           <label>Email</label>
+           <input type="email" class="form-control" placeholder="Email">
+         </div>
+         <div class="form-group">
+           <label>Password</label>
+           <input type="password" class="form-control" placeholder="Password">
+         </div>
+         <div class="checkbox">
+         <label>
+           <input type="checkbox"> Remember me
+         </label>
+         <button type="submit" class="btn btn-default">Login</button>
+       </form>
+     </div>
+   </div>
+
+   <hr>
+
+   <!-- TABLES -->
+   
+    <div class="container">
+        <h3>表格</h3>
+      <table class="table table-striped table-bordered table-hover table-condensed">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr class="danger">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>24</td>
+        </tr>
+        <tr class="success">
+          <td>John</td>
+          <td>Doe</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>Stephanie</td>
+          <td>Landon</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>Johnson</td>
+          <td>19</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <!-- LIST GROUP -->
+    <div class="container">
+        <h3>排列组</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Item One</li>
+        <li class="list-group-item">Item Two</li>
+        <li class="list-group-item">Item Three</li>
+        <li class="list-group-item">Item Four</li>
+      </ul>
+
+      <div class="list-group">
+          <a href="#" class="list-group-item active">Item One</a>
+          <a href="#" class="list-group-item">Item Two</a>
+          <a href="#" class="list-group-item list-group-item-success">Item Three</a>
+          <a href="#" class="list-group-item disabled">Item Four</a>
+        </div>
+    </div>
+
+    <div class="container">
+      <!-- PANELS -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+
+      <hr>
+
+      <!-- WELLS -->
+      <h3>加井well</h3>
+      <div class="well"> Hello World</div>
+      大
+      <div class="well well-lg"> Hello World</div> 
+      小
+      <div class="well well-sm"> Hello World</div>
+
+      <hr>
+
+      <!-- ALERTS -->
+      <h3>提示信息</h3>
+      <div class="alert alert-success" role="alert">A success alert</div>
+      <div class="alert alert-info" role="alert">An info alert</div>
+      <div class="alert alert-warning" role="alert">A warning alert</div>
+      <div class="alert alert-danger" role="alert">A danger alert</div>
+可关闭的
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        You can close this alert
+      </div>
+
+      <!-- PROGRESS BARS -->
+      <h3>进程标</h3>
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:50%;">
+          50%
+        </div>
+      </div>
+
+      <hr>
+      <!-- LABELS -->
+      <h3>标签</h3>
+      <span class="label label-default">Default</span>
+      <h1>Hello <span class="label label-primary">Primary</span></h1>
+      <span class="label label-success">Success</span>
+      <span class="label label-info">Info</span>
+      <span class="label label-warning">Warning</span>
+      <span class="label label-danger">Danger</span>
+
+      <!-- BADGES -->
+      <h3>奖章</h3>
+      <a href="#">Inbox <span class="badge">50</span></a>
+
+      <button class="btn btn-primary" type="button">
+        Messages <span class="badge">2</span>
+      </button>
+    </div>
+
+    <!-- IMAGES -->
+   
+    <div class="container">
+        <h3>图片</h3>
+      <img class="thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">
+      <img class="img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150"><br><br>
+      <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150">
+    </div>
+
+    <hr>
+
+    <!-- GRIDS -->
+
+    <div class="container">
+        <h3>栅格</h3>
+       大小屏都会是两列
+      <div class="row">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+          <p>col-md-8 col-sm-8 col-xs-8" Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <p> col-md-4 col-sm-4 col-xs-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+          只使用了单一的一组 .col-md-*栅格类，就创建了一个基本的栅格系统。
+          它在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列
+          <hr>
+        <div class="col-md-3">
+          <p> col-md-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-md-3">
+          <p> col-md-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-md-3">
+          <p> col-md-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+        <div class="col-md-3">
+          <p> col-md-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p>col-md-6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col-md-6">
+          <p>col-md-6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Bo. col-md-1x</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+        <div class="col-md-1">
+          <h3>Box col-md-1</h3>
+        </div>
+      </div>
+
+
+      <hr>
+      只使用了单一的一组 .col-sm-4栅格类
+      它在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在小屏幕屏幕设备上变为水平排列
+     
+
+
+
+  
+      <div class="row">
+        <div class="col-sm-4">col-sm-4</div>
+        <div class="col-sm-4">col-sm-4</div>
+        <div class="col-sm-4">col-sm-4</div>
+      </div>
+
+      <hr>
+      只使用了单一的一组 .col-xs-4栅格类
+      它在手机变为水平排列
+  
+      <div class="row">
+        <div class="col-xs-4">col-sm-4</div>
+        <div class="col-xs-4">col-sm-4</div>
+        <div class="col-xs-4">col-sm-4</div>
+      </div>
+
+
+
+      <div class="container-fluid">
+        <h1>Two Columns With Two Nested Columns</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row">
+          <div class="col-sm-8" style="background-color:lavender;">.col-sm-8
+            <div class="row">
+              <div class="col-sm-6" style="background-color:lightcyan;">.col-sm-6</div>
+              <div class="col-sm-6" style="background-color:lightgray;">.col-sm-6</div>
+            </div>
+          </div>
+          <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid">
+        <h1>Mixed: Mobile And Desktop</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row">
+          <div class="col-xs-9 col-md-7" style="background-color:red;">.col-xs-9 .col-md-7</div>
+          <div class="col-xs-3 col-md-5" style="background-color:lavender;">.col-xs-3 .col-md-5</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-md-10" style="background-color:lavenderblush;">.col-xs-6 .col-md-10</div>
+          <div class="col-xs-6 col-md-2" style="background-color:lightgrey;">.col-xs-6 .col-md-2</div>
+        </div>
+        <div class="row" style="background-color:lightcyan;">
+          <div class="col-xs-6">.col-xs-6</div>
+          <div class="col-xs-6">.col-xs-6</div>
+        </div>
+      </div>
+          
+
+
+      <div class="container-fluid">
+        <h1>Mixed: Mobile, Tablet And Desktop</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row">
+          <div class="col-xs-7 col-sm-6 col-lg-8" style="background-color:red;">.col-xs-7 .col-sm-6 .col-lg-8</div>
+          <div class="col-xs-5 col-sm-6 col-lg-4" style="background-color:lavender;">.col-xs-5 .col-sm-6 .col-lg-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-8 col-lg-10" style="background-color:lavenderblush;">.col-xs-6 .col-sm-8 .col-lg-10</div>
+          <div class="col-xs-6 col-sm-4 col-lg-2" style="background-color:lightgrey;">.col-xs-6 .col-sm-4 .col-lg-2</div>
+        </div>
+        <div class="row" style="background-color:lightcyan;">
+          <div class="col-xs-6">.col-xs-6</div>
+          <div class="col-xs-6">.col-xs-6</div>
+        </div>
+      </div>
+          
+      <div class="container-fluid">
+        <h1>Clear Floats </h1>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3" style="background-color:lavender;">
+            Column 1<br>
+            Resize the browser window to see the effect. Also try to remove the div clearfix line and see what happens.
+          </div>
+          <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">Column 2</div>
+          <!-- Add clearfix for only the required viewport -->
+          <div class="clearfix visible-xs"></div>
+          <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">Column 3</div>
+          <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">Column 4</div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <h1> Without Clear Floats </h1>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3" style="background-color:lavender;">
+            Column 1<br>
+            Resize the browser window to see the effect. Also try to remove the div clearfix line and see what happens.
+          </div>
+          <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">Column 2</div>
+          <!-- Add clearfix for only the required viewport -->
+          <!-- <div class="clearfix visible-xs"></div> -->
+          <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">Column 3</div>
+          <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">Column 4</div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <h1>Offsetting Columns 偏移</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row" style="background-color:lavender;">
+          <div class="col-sm-5 col-md-6" style="background-color:lightgray;">.col-sm-5 .col-md-6</div>
+          <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0" style="background-color:lightcyan;">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+        </div>
+      </div>
+          
+
+      <div class="container-fluid">
+        <h1>Push and Pull推拉变位</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-8" style="background-color:lavender;">.col-sm-4 .col-sm-push-8</div>
+          <div class="col-sm-8 col-sm-pull-4" style="background-color:lavenderblush;">.col-sm-8 .col-sm-pull-4</div>
+        </div>
+      </div>
+
+
+
+    <div style="height:400px">aaa</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
